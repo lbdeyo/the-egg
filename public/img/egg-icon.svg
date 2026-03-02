@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 36.14 46.5">
+  <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #fff;
+      }
+
+      .st1 {
+        fill: #5e5e5e;
+      }
+
+      .st2 {
+        fill: #fc6e03;
+        filter: url(#drop-shadow-1);
+      }
+    </style>
+    <filter id="drop-shadow-1" x="9.69" y="19.82" width="20.27" height="20.27" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2"/>
+      <feGaussianBlur result="blur" stdDeviation="0"/>
+      <feFlood flood-color="#000" flood-opacity="1"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g>
+    <g id="_x36_49_x2C__Decoration_x2C__easter_x2C__easter_egg_x2C__egg">
+      <path class="st0" d="M1.35,28.52c0,9.5,7.77,17.18,17.37,17.18s17.38-7.68,17.38-17.18c0-3.88-1.36-10.76-4.16-16.86C28.58,4.3,23.93.34,18.73.34s-9.77,3.96-13.21,11.32C2.63,17.83,1.35,24.72,1.35,28.52ZM3.35,28.52c0-3.72,1.36-10.37,3.92-15.99,2.16-4.59,5.85-10.13,11.45-10.13,5.6,0,9.29,5.54,11.45,10.13,2.56,5.54,3.92,12.27,3.92,15.99,0,8.39-6.89,15.2-15.37,15.2s-15.37-6.81-15.37-15.2ZM3.35,28.52c0-3.72,1.36-10.37,3.92-15.99,2.16-4.59,5.85-10.13,11.45-10.13,5.6,0,9.29,5.54,11.45,10.13,2.56,5.54,3.92,12.27,3.92,15.99,0,8.39-6.89,15.2-15.37,15.2s-15.37-6.81-15.37-15.2Z"/>
+    </g>
+    <g id="_x36_49_x2C__Decoration_x2C__easter_x2C__easter_egg_x2C__egg1" data-name="_x36_49_x2C__Decoration_x2C__easter_x2C__easter_egg_x2C__egg">
+      <path class="st1" d="M4.78,28.02c0-3.37,1.23-9.41,3.56-14.5,1.96-4.16,5.3-9.19,10.39-9.19s8.42,5.03,10.39,9.19c2.32,5.03,3.56,11.13,3.56,14.5,0,7.61-6.25,13.78-13.94,13.78s-13.94-6.17-13.94-13.78ZM4.78,28.02c0-3.37,1.23-9.41,3.56-14.5,1.96-4.16,5.3-9.19,10.39-9.19s8.42,5.03,10.39,9.19c2.32,5.03,3.56,11.13,3.56,14.5,0,7.61-6.25,13.78-13.94,13.78s-13.94-6.17-13.94-13.78Z"/>
+    </g>
+  </g>
+  <circle class="st2" cx="18.83" cy="28.96" r="9.14"/>
+</svg>

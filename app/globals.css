@@ -1,3 +1,6 @@
+/* Adobe Fonts (Typekit) – load first so @font-face is available. Allowlist this site’s domain in the Adobe Fonts kit. */
+@import url("https://use.typekit.net/dmt4kkh.css");
+
 @import "tailwindcss";
 
 :root {
