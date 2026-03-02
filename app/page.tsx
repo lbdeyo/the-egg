@@ -1,16 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { Fragment, useState } from "react";
-
-const NAV_LINKS = [
-  { label: "About", href: "#about" },
-  { label: "History", href: "#history" },
-  { label: "Get Involved", href: "#get-involved" },
-  { label: "Playwright", href: "#playwright" },
-  { label: "Contact", href: "#contact" },
-];
+import { Fragment } from "react";
+import { NavBar } from "./NavBar";
 
 const ABOUT_PARAS = [
   "THE EGG is a seductive, unsettling collision of flesh and code. An egg-laying college professor, a feather-faced hacker, and a mute street artist are drawn together when a new technology begins to dissolve the boundary between human and manufactured. What begins as innovation turns mythic and corporate, intimate and apocalyptic.",
@@ -43,84 +35,21 @@ const CHARACTERS: Character[] = [
 ];
 
 export default function Home() {
-  const [mobileOpen, setMobileOpen] = useState(false);
-
   return (
-    <div className="relative min-h-screen w-full font-sans bg-transparent">
+    <div className="relative min-h-screen w-full font-sans bg-[#181818]">
       {/* Background */}
-      <Image
-        src="/img/egg-site-bg.png"
-        alt="bg"
-        fill
-        className="object-cover object-center"
-        priority
-        sizes="100vw"
-      />
+      <div className="pointer-events-none absolute inset-0 flex justify-start overflow-hidden">
+        <Image
+          src="/img/egg-site-bg.png"
+          alt="bg"
+          width={1600}
+          height={1600}
+          className="h-full w-full max-w-[975px] xl:max-w-[1265px] object-cover"
+          priority
+        />
+      </div>
       <div className="relative z-10 flex min-h-screen flex-col ">
-        {/* Header – sits on top of full-bleed background */}
-        <header className="flex shrink-0 items-center justify-between border-b border-white/10 bg-[#363636] pl-[10px] pr-6 py-1.5">
-          {/* Left: egg icon + desktop nav */}
-          <div className="flex items-center gap-[10px]">
-            <Image
-              src="/img/egg-icon.svg"
-              alt=""
-              width={24}
-              height={24}
-              className="h-6 w-6 shrink-0"
-            />
-            {/* Desktop nav */}
-            <nav className="hidden md:flex flex-wrap items-center gap-2 text-[0.7rem] uppercase tracking-wide text-white">
-              {NAV_LINKS.map((link, i) => (
-                <span key={link.href} className="flex items-center gap-2">
-                  <Link
-                    href={link.href}
-                    className="hover:text-orange-400 transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                  {i < NAV_LINKS.length - 1 && (
-                    <span className="text-white/40">|</span>
-                  )}
-                </span>
-              ))}
-            </nav>
-          </div>
-
-          {/* Desktop tagline */}
-          <p className="hidden md:block ps-3 shrink-0 whitespace-nowrap text-[0.7rem] uppercase tracking-wide text-[#cccccc]">
-            A dark comedy about technology gone very, very wrong.
-          </p>
-
-          {/* Mobile hamburger */}
-          <button
-            type="button"
-            className="ml-2 flex h-8 w-8 flex-col items-center justify-center md:hidden space-y-0.5"
-            aria-label="Toggle navigation"
-            onClick={() => setMobileOpen((open) => !open)}
-          >
-            <span className="h-0.5 w-4 bg-white" />
-            <span className="h-0.5 w-4 bg-white" />
-            <span className="h-0.5 w-4 bg-white" />
-          </button>
-        </header>
-
-        {/* Mobile menu */}
-        {mobileOpen && (
-          <nav className="md:hidden border-b border-white/10 bg-[#363636] pl-[10px] pr-6 py-2">
-            <ul className="flex flex-col gap-2 text-[0.7rem] uppercase tracking-wide text-white">
-              {NAV_LINKS.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="hover:text-orange-400 transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        )}
+        <NavBar />
 
         {/* Title – on background, no hero block */}
         <section className="bg-transparent px-8 pt-10 pb-6 md:px-12 lg:px-20">
@@ -136,9 +65,9 @@ export default function Home() {
         </section>
 
         {/* About the Play */}
-        <section id="about" className="px-8 py-7 md:px-12 lg:px-20 lg:ms-45">
-          <div className="mx-auto max-w-3xl">
-            <h2 className="tk-kallisto-lined mb-8 text-2xl uppercase tracking-wide text-orange-500 md:text-3xl">
+        <section id="about" className="px-2 py-4 ms-5 max-w-lg lg:ms-100   ">
+          <div className="mx-auto p-2  bg-[#181818]">
+            <h2 className="tk-kallisto-lined mb-3 text-2xl uppercase tracking-wide text-orange-500 md:text-3xl">
               About the Play
             </h2>
             <div className="space-y-5 text-base leading-relaxed text-white/90">
@@ -152,7 +81,7 @@ export default function Home() {
         {/* Characters */}
         <section
           id="characters"
-          className="px-8 py-16 md:px-12 lg:px-20 lg:ms-55"
+          className="px-8 py-16 md:px-12 lg:px-20 lg:ms-55 hidden"
         >
           <div className="mx-auto max-w-4xl">
             <h2 className="tk-kallisto-lined mb-10 text-2xl uppercase tracking-wide text-orange-500 md:text-3xl">
