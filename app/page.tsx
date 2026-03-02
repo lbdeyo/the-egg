@@ -13,13 +13,9 @@ const NAV_LINKS = [
 ];
 
 const ABOUT_PARAS = [
-  "THE EGG is about an egg-laying college professor, a feather-faced hacker, and a mute street artist whose lives collide when a disruptive technology enters the scene.",
-  "THE EGG is about identity and being true to oneself.",
-  "THE EGG is about isolation and connection.",
-  "THE EGG is about what happens when corporations take artificial intelligence to its logical extreme.",
-  "THE EGG is about the role of art in daily life.",
-  "THE EGG is about mortality and immortality. Aging and childhood. Love and death and friendship.",
-  "And it's got an army of dolls.",
+  "THE EGG is a seductive, unsettling collision of flesh and code. An egg-laying college professor, a feather-faced hacker, and a mute street artist are drawn together when a new technology begins to dissolve the boundary between human and manufactured. What begins as innovation turns mythic and corporate, intimate and apocalyptic.",
+
+  "This is a story about identity under siege, about the longing to be known and the terror of being replicated. It is about art in an age of algorithms, connection in a world engineered for isolation, mortality facing the promise of digital immortality. Childhood and decay. Love and betrayal. And somewhere in the shadows, an army of dolls waits.",
 ];
 
 type Character = { name: string; description: string };
@@ -128,18 +124,19 @@ export default function Home() {
 
         {/* Title – on background, no hero block */}
         <section className="bg-transparent px-8 pt-10 pb-6 md:px-12 lg:px-20">
-          <div className="max-w-5xl">
+          <div className="max-w-5xl lg:ms-40">
             <h1 className="tk-baroque-text-jf text-5xl tracking-tight text-orange-500 md:text-6xl lg:text-8xl">
-              The Egg <span className="text-zinc-700">A Play</span>
+              The Egg{" "}
+              <span className="text-zinc-700 text-3xl md:text-8xl">A Play</span>
             </h1>
-            <p className="mt-4 text-lg text-zinc-500">
+            <p className="mt-4 lg:ps-8 text-2xl lg:text-3xl font-bold  text-zinc-500">
               Welcome to the incubation
             </p>
           </div>
         </section>
 
         {/* About the Play */}
-        <section id="about" className="px-8 py-16 md:px-12 lg:px-20">
+        <section id="about" className="px-8 py-7 md:px-12 lg:px-20 lg:ms-45">
           <div className="mx-auto max-w-3xl">
             <h2 className="tk-kallisto-lined mb-8 text-2xl uppercase tracking-wide text-orange-500 md:text-3xl">
               About the Play
@@ -153,7 +150,10 @@ export default function Home() {
         </section>
 
         {/* Characters */}
-        <section id="characters" className="px-8 py-16 md:px-12 lg:px-20">
+        <section
+          id="characters"
+          className="px-8 py-16 md:px-12 lg:px-20 lg:ms-55"
+        >
           <div className="mx-auto max-w-4xl">
             <h2 className="tk-kallisto-lined mb-10 text-2xl uppercase tracking-wide text-orange-500 md:text-3xl">
               Characters
