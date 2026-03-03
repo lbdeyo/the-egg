@@ -28,7 +28,7 @@ export function NavBar() {
             className="h-6 w-6 shrink-0"
           />
           {/* Desktop nav */}
-          <nav className="hidden md:flex flex-wrap items-center gap-2 text-[0.7rem] uppercase tracking-wide text-white">
+          <nav className="hidden md:flex flex-wrap items-center gap-2 text-[0.7rem] uppercase tracking-wide text-white drop-shadow-[0_2px_0_rgba(0,0,0,1)]">
             {NAV_LINKS.map((link, i) => (
               <span key={link.href} className="flex items-center gap-2">
                 <Link
@@ -46,7 +46,7 @@ export function NavBar() {
         </div>
 
         {/* Desktop tagline */}
-        <p className="hidden md:block ps-3 shrink-0 whitespace-nowrap text-[0.7rem] uppercase tracking-wide text-[#cccccc]">
+        <p className="hidden md:block ps-3 shrink-0 whitespace-nowrap text-[0.7rem] uppercase tracking-wide text-[#cccccc] drop-shadow-[0_2px_0_rgba(0,0,0,1)]">
           A dark comedy about technology gone very, very wrong.
         </p>
 
@@ -66,7 +66,7 @@ export function NavBar() {
       {/* Mobile menu */}
       {mobileOpen && (
         <nav className="md:hidden border-b border-white/10 bg-[#363636] pl-[10px] pr-6 py-2">
-          <ul className="flex flex-col gap-2 text-[0.7rem] uppercase tracking-wide text-white">
+          <ul className="flex flex-col gap-2 text-[0.7rem] uppercase tracking-wide text-white drop-shadow-[0_2px_0_rgba(0,0,0,1)]">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <Link

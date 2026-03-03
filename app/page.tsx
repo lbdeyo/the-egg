@@ -4,11 +4,30 @@ import Image from "next/image";
 import { Fragment } from "react";
 import { NavBar } from "./NavBar";
 
-const ABOUT_PARAS = [
-  "THE EGG is a seductive, unsettling collision of flesh and code. An egg-laying college professor, a feather-faced hacker, and a mute street artist are drawn together when a new technology begins to dissolve the boundary between human and manufactured. What begins as innovation turns mythic and corporate, intimate and apocalyptic.",
+// const ABOUT_PARAS = [
+//   "THE EGG is a seductive, unsettling collision of flesh and code. An egg-laying college professor, a feather-faced hacker, and a mute street artist are drawn together when a new technology begins to dissolve the boundary between human and manufactured. What begins as innovation turns mythic and corporate, intimate and apocalyptic.",
 
-  "This is a story about identity under siege, about the longing to be known and the terror of being replicated. It is about art in an age of algorithms, connection in a world engineered for isolation, mortality facing the promise of digital immortality. Childhood and decay. Love and betrayal. And somewhere in the shadows, an army of dolls waits.",
+//   "This is a story about identity under siege, about the longing to be known and the terror of being replicated. It is about art in an age of algorithms, connection in a world engineered for isolation, mortality facing the promise of digital immortality. Childhood and decay. Love and betrayal. And somewhere in the shadows, an army of dolls waits.",
+// ];
+
+const ABOUT_PARAS = [
+  "THE EGG is an absurdist dark comedy about technology and art",
+
+  "It is about identity under siege, about the longing to be known and the terror of being replicated",
+  "It is about art in an age of algorithms; connection in a world engineered for isolation; and mortality colliding with the promise of digital immortality",
+  "Childhood and decay. Love and betrayal.",
+  "And somewhere in the shadows, an army of dolls awaits.",
 ];
+
+//  THE EGG is an absurdist dark comedy about technology and art.
+
+// It is about identity under siege, about the longing to be known and the terror of being replicated.
+
+// It is about art in an age of algorithms; connection in a world engineered for isolation; and mortality colliding with the promise of digital immortality.
+
+// Childhood and decay. Love and betrayal.
+
+// And somewhere in the shadows, an army of dolls awaits.
 
 type Character = { name: string; description: string };
 
@@ -48,17 +67,31 @@ export default function Home() {
           priority
         />
       </div>
-      <div className="relative z-10 flex min-h-screen flex-col ">
+      <div className="relative z-10 flex min-h-screen flex-col">
         <NavBar />
 
         {/* Title – on background, no hero block */}
         <section className="bg-transparent px-8 pt-10 pb-6 md:px-12 lg:px-20">
           <div className="max-w-5xl lg:ms-40">
-            <h1 className="tk-baroque-text-jf text-5xl tracking-tight text-orange-500 md:text-6xl lg:text-8xl">
+            <h1
+              className="text-5xl tracking-tight text-orange-500 md:text-6xl lg:text-7xl drop-shadow-[0_2px_0_rgba(0,0,0,1)]"
+              style={{
+                fontFamily: '"superscore-vf", sans-serif',
+                fontVariationSettings: '"FLUX" 0, "wght" 700',
+              }}
+            >
               The Egg{" "}
-              <span className="text-zinc-700 text-3xl md:text-8xl">A Play</span>
+              <span
+                className="text-zinc-700 text-3xl md:text-7xl"
+                style={{
+                  fontFamily: '"superscore-vf", sans-serif',
+                  fontVariationSettings: '"FLUX" 0, "wght" 400',
+                }}
+              >
+                A Play
+              </span>
             </h1>
-            <p className="mt-4 lg:ps-8 text-2xl lg:text-3xl font-bold  text-zinc-500">
+            <p className="mt-4 lg:ps-8 text-2xl lg:text-3xl font-bold  text-zinc-500 drop-shadow-[0_2px_0_rgba(0,0,0,1)]">
               Welcome to the incubation
             </p>
           </div>
@@ -67,12 +100,14 @@ export default function Home() {
         {/* About the Play */}
         <section id="about" className="px-2 py-4 ms-5 max-w-lg lg:ms-100   ">
           <div className="mx-auto p-2  bg-[#181818]">
-            <h2 className="tk-kallisto-lined mb-3 text-2xl uppercase tracking-wide text-orange-500 md:text-3xl">
+            <h2 className="tk-kallisto-lined mb-3 text-2xl uppercase tracking-wide text-orange-500 md:text-3xl drop-shadow-[0_2px_0_rgba(0,0,0,1)]">
               About the Play
             </h2>
             <div className="space-y-5 text-base leading-relaxed text-white/90">
               {ABOUT_PARAS.map((para, i) => (
-                <p key={i}>{para}</p>
+                <p key={i} className="drop-shadow-[0_2px_0_rgba(0,0,0,1)]">
+                  {para}
+                </p>
               ))}
             </div>
           </div>
@@ -84,28 +119,23 @@ export default function Home() {
           className="px-8 py-16 md:px-12 lg:px-20 lg:ms-55 hidden"
         >
           <div className="mx-auto max-w-4xl">
-            <h2 className="tk-kallisto-lined mb-10 text-2xl uppercase tracking-wide text-orange-500 md:text-3xl">
+            <h2 className="tk-kallisto-lined mb-10 text-2xl uppercase tracking-wide text-orange-500 md:text-3xl drop-shadow-[0_2px_0_rgba(0,0,0,1)]">
               Characters
             </h2>
             <div className="grid gap-x-12 gap-y-4 md:grid-cols-[auto_1fr]">
               {CHARACTERS.map(({ name, description }) => (
                 <Fragment key={name}>
-                  <div className="font-semibold uppercase tracking-wide text-white">
+                  <div className="font-semibold uppercase tracking-wide text-white drop-shadow-[0_2px_0_rgba(0,0,0,1)]">
                     {name}
                   </div>
-                  <p className="text-white/90">{description}</p>
+                  <p className="text-white/90 drop-shadow-[0_2px_0_rgba(0,0,0,1)]">
+                    {description}
+                  </p>
                 </Fragment>
               ))}
             </div>
           </div>
         </section>
-
-        {/* Footer accent */}
-        <footer className="px-8 py-4 md:px-12 lg:px-20">
-          <span className="text-xs uppercase tracking-wider text-orange-500/70">
-            Abeper →
-          </span>
-        </footer>
       </div>
     </div>
   );
