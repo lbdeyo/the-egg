@@ -20,13 +20,15 @@ export function NavBar() {
       <header className="flex shrink-0 items-center justify-between border-b border-white/10 bg-[#363636] pl-[10px] pr-6 py-1.5">
         {/* Left: egg icon + desktop nav */}
         <div className="flex items-center gap-[10px]">
-          <Image
-            src="/img/egg-icon.svg"
-            alt=""
-            width={24}
-            height={24}
-            className="h-6 w-6 shrink-0"
-          />
+          <Link href="/" aria-label="Home">
+            <Image
+              src="/img/egg-icon.svg"
+              alt=""
+              width={24}
+              height={24}
+              className="h-6 w-6 shrink-0"
+            />
+          </Link>
           {/* Desktop nav */}
           <nav className="hidden md:flex flex-wrap items-center gap-2 text-[0.7rem] uppercase tracking-wide text-white drop-shadow-[0_2px_0_rgba(0,0,0,1)]">
             {NAV_LINKS.map((link, i) => (

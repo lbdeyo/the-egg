@@ -57,19 +57,22 @@ export default function Home() {
   return (
     <div className="relative min-h-screen w-full font-sans bg-[#181818]">
       {/* Background */}
-      <div className="pointer-events-none absolute inset-0 flex justify-start overflow-hidden">
-        <Image
-          src="/img/egg-site-bg.png"
-          alt="bg"
-          width={1600}
-          height={1600}
-          className="h-full w-full max-w-[975px] xl:max-w-[1265px] object-cover"
-          priority
-        />
-      </div>
+        <div className="pointer-events-none absolute inset-0 overflow-hidden">
+          <Image
+            src="/img/ostrich-egg-edited.png"
+            alt="bg"
+            width={1600}
+            height={1600}
+            className="h-full w-full max-w-[975px] xl:max-w-[1265px] object-contain"
+            style={{ transform: "translateX(-50%) scale(0.75)" }}
+            priority
+            unoptimized
+          />
+        </div>
       <div className="relative z-10 flex min-h-screen flex-col">
         <NavBar />
 
+        <div className="translate-x-[40px]">
         {/* Title – on background, no hero block */}
         <section className="bg-transparent px-8 pt-10 pb-6 md:px-12 lg:px-20">
           <div className="max-w-5xl lg:ms-40">
@@ -80,9 +83,9 @@ export default function Home() {
                 fontVariationSettings: '"FLUX" 0, "wght" 700',
               }}
             >
-              The Egg{" "}
+              The Egg <br></br>
               <span
-                className="text-zinc-700 text-3xl md:text-7xl"
+                className="text-zinc-400 text-3xl md:text-7xl"
                 style={{
                   fontFamily: '"superscore-vf", sans-serif',
                   fontVariationSettings: '"FLUX" 0, "wght" 400',
@@ -91,19 +94,36 @@ export default function Home() {
                 A Play
               </span>
             </h1>
-            <p className="mt-4 lg:ps-8 text-2xl lg:text-3xl font-bold  text-zinc-500 drop-shadow-[0_2px_0_rgba(0,0,0,1)]">
+            <p
+              className="mt-4 text-2xl lg:text-3xl text-zinc-500 drop-shadow-[0_2px_0_rgba(0,0,0,1)]"
+              style={{
+                fontFamily: '"cc-overbyte-off", sans-serif',
+                fontWeight: 400,
+                fontStyle: "normal",
+              }}
+            >
               Welcome to the incubation
             </p>
           </div>
         </section>
 
         {/* About the Play */}
-        <section id="about" className="px-2 py-4 ms-5 max-w-lg lg:ms-100   ">
-          <div className="mx-auto p-2  bg-[#181818]">
+        <section
+          id="about"
+          className="px-8 py-4 max-w-2xl md:px-12 lg:px-20 lg:ms-40"
+        >
+          <div className="p-2 bg-[#181818]">
             <h2 className="tk-kallisto-lined mb-3 text-2xl uppercase tracking-wide text-orange-500 md:text-3xl drop-shadow-[0_2px_0_rgba(0,0,0,1)]">
               About the Play
             </h2>
-            <div className="space-y-5 text-base leading-relaxed text-white/90">
+            <div
+              className="space-y-5 text-base leading-relaxed text-white/90"
+              style={{
+                fontFamily: '"bitcount-grid-single-circle", sans-serif',
+                fontWeight: 500,
+                fontStyle: "normal",
+              }}
+            >
               {ABOUT_PARAS.map((para, i) => (
                 <p key={i} className="drop-shadow-[0_2px_0_rgba(0,0,0,1)]">
                   {para}
@@ -136,6 +156,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        </div>
       </div>
     </div>
   );
