@@ -72,9 +72,8 @@ export default function Home() {
       <div className="relative z-10 flex min-h-screen flex-col">
         {/* <NavBar /> */}
 
-        <p className="pointer-events-none absolute left-0 top-0 z-20 max-w-[calc(100vw-4rem)] px-8 pt-8 text-sm leading-snug text-zinc-500 sm:max-w-xl md:px-12 md:pt-10 lg:max-w-2xl lg:px-20">
-          The Egg: Coming to The Rosette theater, Austin, TX, October 29 -
-          November 21.
+        <p className="pointer-events-none absolute inset-x-0 top-0 z-20 px-8 pt-8 text-sm leading-snug text-zinc-500 md:px-12 md:pt-10 lg:px-20">
+          The Egg: Coming to The Rosette theater, Austin, TX, October 29 – November 21.
         </p>
 
         {/* Title + subheader – shrink-wrapped block centered in viewport; text left inside the block */}
@@ -135,6 +134,24 @@ export default function Home() {
             </div>
           </section>
         </div>
+
+        {/* No visible chrome — only the logo reads; sticks to viewport bottom while scrolling */}
+        <footer className="sticky bottom-0 z-30 mt-auto flex w-full justify-end bg-transparent px-8 py-6 md:px-12 md:py-8">
+          <a
+            href="https://the-zahir.org"
+            className="inline-flex shrink-0 cursor-pointer rounded-md opacity-60 transition-opacity hover:opacity-100 focus:outline-none focus-visible:opacity-100 focus-visible:ring-2 focus-visible:ring-zinc-400 focus-visible:ring-offset-2"
+            aria-label="Visit The Zahir"
+          >
+            <Image
+              src="/img/zahir-logo-linkedin.png"
+              alt=""
+              width={300}
+              height={300}
+              className="pointer-events-none block h-[calc(3.5rem*1.15)] w-auto md:h-[calc(4rem*1.15)]"
+              aria-hidden
+            />
+          </a>
+        </footer>
       </div>
     </div>
   );
