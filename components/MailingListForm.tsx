@@ -32,8 +32,7 @@ export function MailingListForm() {
       if (!res.ok) {
         setStatus("error");
         setMessage(
-          data.error ||
-            "Something went wrong. Please try again in a moment.",
+          data.error || "Something went wrong. Please try again in a moment.",
         );
         return;
       }
@@ -53,7 +52,7 @@ export function MailingListForm() {
         htmlFor="mailing-email"
         className="text-xl lg:text-2xl text-zinc-400 drop-shadow-[0_1px_0_rgba(0,0,0,0.08)]"
       >
-        Join our mailing list.
+        Join the wait list.
       </label>
       <input
         id="mailing-email"
@@ -70,7 +69,7 @@ export function MailingListForm() {
         disabled={status === "loading"}
         className="my-2 rounded-md border border-zinc-400 bg-transparent px-4 py-2 text-zinc-400 transition-colors hover:border-zinc-500 hover:bg-zinc-50 hover:text-zinc-500 disabled:pointer-events-none disabled:opacity-60"
       >
-        {status === "loading" ? "Subscribing…" : "Subscribe"}
+        {status === "loading" ? "Joining…" : "Join"}
       </button>
       {message && status === "error" ? (
         <p className="text-sm text-red-600" role="alert">

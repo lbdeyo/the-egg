@@ -73,7 +73,8 @@ export default function Home() {
         {/* <NavBar /> */}
 
         <p className="pointer-events-none absolute left-0 top-0 z-20 max-w-[calc(100vw-4rem)] px-8 pt-8 text-sm leading-snug text-zinc-500 sm:max-w-xl md:px-12 md:pt-10 lg:max-w-2xl lg:px-20">
-          Coming to the Rosette theater, Austin, TX, October 29 - November 21.
+          The Egg: Coming to The Rosette theater, Austin, TX, October 29 -
+          November 21.
         </p>
 
         {/* Title + subheader – shrink-wrapped block centered in viewport; text left inside the block */}
