@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+import { HubSpotTracker } from "@/components/HubSpotTracker";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -28,8 +31,15 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://use.typekit.net/dmt4kkh.css" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#1a1a1a] text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-zinc-900`}
       >
+        <Script
+          id="hs-script-loader"
+          src="https://js-na2.hs-scripts.com/244639378.js"
+          strategy="afterInteractive"
+        />
+        <HubSpotTracker />
+        <GoogleAnalytics />
         {children}
       </body>
     </html>

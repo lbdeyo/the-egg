@@ -17,7 +17,7 @@ export function NavBar() {
 
   return (
     <>
-      <header className="flex shrink-0 items-center justify-between border-b border-white/10 bg-[#363636] pl-[10px] pr-6 py-1.5">
+      <header className="flex shrink-0 items-center justify-between border-b border-zinc-200 bg-white pl-[10px] pr-6 py-1.5">
         {/* Left: egg icon + desktop nav */}
         <div className="flex items-center gap-[10px]">
           <Link href="/" aria-label="Home">
@@ -30,17 +30,17 @@ export function NavBar() {
             />
           </Link>
           {/* Desktop nav */}
-          <nav className="hidden md:flex flex-wrap items-center gap-2 text-[0.7rem] uppercase tracking-wide text-white drop-shadow-[0_2px_0_rgba(0,0,0,1)]">
+          <nav className="hidden md:flex flex-wrap items-center gap-2 text-[0.7rem] uppercase tracking-wide text-zinc-800 drop-shadow-[0_1px_0_rgba(0,0,0,0.06)]">
             {NAV_LINKS.map((link, i) => (
               <span key={link.href} className="flex items-center gap-2">
                 <Link
                   href={link.href}
-                  className="hover:text-orange-400 transition-colors"
+                  className="hover:text-orange-600 transition-colors"
                 >
                   {link.label}
                 </Link>
                 {i < NAV_LINKS.length - 1 && (
-                  <span className="text-white/40">|</span>
+                  <span className="text-zinc-300">|</span>
                 )}
               </span>
             ))}
@@ -48,7 +48,7 @@ export function NavBar() {
         </div>
 
         {/* Desktop tagline */}
-        <p className="hidden md:block ps-3 shrink-0 whitespace-nowrap text-[0.7rem] uppercase tracking-wide text-[#cccccc] drop-shadow-[0_2px_0_rgba(0,0,0,1)]">
+        <p className="hidden md:block ps-3 shrink-0 whitespace-nowrap text-[0.7rem] uppercase tracking-wide text-zinc-600 drop-shadow-[0_1px_0_rgba(0,0,0,0.06)]">
           A dark comedy about technology gone very, very wrong.
         </p>
 
@@ -59,21 +59,21 @@ export function NavBar() {
           aria-label="Toggle navigation"
           onClick={() => setMobileOpen((open) => !open)}
         >
-          <span className="h-0.5 w-4 bg-white" />
-          <span className="h-0.5 w-4 bg-white" />
-          <span className="h-0.5 w-4 bg-white" />
+          <span className="h-0.5 w-4 bg-zinc-800" />
+          <span className="h-0.5 w-4 bg-zinc-800" />
+          <span className="h-0.5 w-4 bg-zinc-800" />
         </button>
       </header>
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <nav className="md:hidden border-b border-white/10 bg-[#363636] pl-[10px] pr-6 py-2">
-          <ul className="flex flex-col gap-2 text-[0.7rem] uppercase tracking-wide text-white drop-shadow-[0_2px_0_rgba(0,0,0,1)]">
+        <nav className="md:hidden border-b border-zinc-200 bg-white pl-[10px] pr-6 py-2">
+          <ul className="flex flex-col gap-2 text-[0.7rem] uppercase tracking-wide text-zinc-800 drop-shadow-[0_1px_0_rgba(0,0,0,0.06)]">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="hover:text-orange-400 transition-colors"
+                  className="hover:text-orange-600 transition-colors"
                 >
                   {link.label}
                 </Link>
