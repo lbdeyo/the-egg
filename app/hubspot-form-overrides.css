@@ -1,0 +1,180 @@
+/**
+ * HubSpot embedded form — match prior MailingListForm (zinc palette, outline submit).
+ * If HubSpot changes class names or uses a strict iframe embed, tweak here or in HubSpot’s form theme.
+ */
+
+/* ----- Layout: line up “Join the wait list” with form (HubSpot adds padding / centers shell) ----- */
+.hubspot-mailing-embed {
+  box-sizing: border-box;
+}
+
+.hubspot-mailing-heading {
+  box-sizing: border-box;
+  text-align: center !important;
+}
+
+.hubspot-form-slot,
+.hubspot-mailing-embed .hs-form-frame {
+  box-sizing: border-box;
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: left !important;
+  display: block !important;
+}
+
+/* Newer embeds: flex/centered wrapper inside the frame */
+.hubspot-mailing-embed .hs-form-frame > * {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  padding-left: 0 !important;
+  text-align: left !important;
+  max-width: 100% !important;
+}
+
+.hubspot-mailing-embed .hs-form-frame iframe {
+  display: block !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  max-width: 100% !important;
+}
+
+.hubspot-mailing-embed .hs-form-frame form.hs-form,
+.hubspot-mailing-embed .hs-form-frame .hs-form {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.25rem !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.hubspot-mailing-embed .hs-form-field {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.hubspot-mailing-embed .hs-form-frame fieldset {
+  max-width: none !important;
+  border: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.hubspot-mailing-embed .hs-form-frame .form-columns-1,
+.hubspot-mailing-embed .hs-form-frame .form-columns-2 {
+  max-width: none !important;
+}
+
+/* Label — ~ text-xl lg:text-2xl text-zinc-400 */
+.hubspot-mailing-embed .hs-form-field > label {
+  font-size: 1.25rem !important;
+  line-height: 1.75rem !important;
+  color: #a1a1aa !important;
+  filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.08));
+}
+
+@media (min-width: 1024px) {
+  .hubspot-mailing-embed .hs-form-field > label {
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+  }
+}
+
+.hubspot-mailing-embed .hs-form-required {
+  color: #a1a1aa !important;
+}
+
+/* Inputs */
+.hubspot-mailing-embed .hs-input,
+.hubspot-mailing-embed input.hs-input,
+.hubspot-mailing-embed .hs-form-field input[type="email"],
+.hubspot-mailing-embed .hs-form-field input[type="text"] {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  border-radius: 0.375rem !important;
+  border: 1px solid #e4e4e7 !important;
+  padding: 0.5rem !important;
+  color: #a1a1aa !important;
+  background-color: #ffffff !important;
+}
+
+.hubspot-mailing-embed .hs-input::placeholder,
+.hubspot-mailing-embed input::placeholder {
+  color: #a1a1aa !important;
+  opacity: 1 !important;
+}
+
+/**
+ * Submit — outline only, rich gray (override HubSpot orange / filled .primary).
+ * zinc-600 text & border; hover toward zinc-800 + light gray fill.
+ */
+.hubspot-mailing-embed .hs-button,
+.hubspot-mailing-embed input.hs-button,
+.hubspot-mailing-embed .hs-button.primary,
+.hubspot-mailing-embed .hs-button.primary.large,
+.hubspot-mailing-embed input[type="submit"].hs-button,
+.hubspot-mailing-embed .hs_submit .actions input,
+.hubspot-mailing-embed .hs_submit .actions input[type="submit"],
+.hubspot-mailing-embed .hs_submit input[type="submit"],
+.hubspot-mailing-embed .hs-form input[type="submit"],
+.hubspot-mailing-embed .hs-form button[type="submit"] {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+  border-radius: 0.375rem !important;
+  border: 1px solid #52525b !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  color: #52525b !important;
+  padding: 0.5rem 1rem !important;
+  cursor: pointer !important;
+  font-weight: 500 !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  transition:
+    border-color 0.15s ease,
+    color 0.15s ease,
+    background-color 0.15s ease !important;
+}
+
+.hubspot-mailing-embed .hs-button:hover,
+.hubspot-mailing-embed input.hs-button:hover,
+.hubspot-mailing-embed .hs-button.primary:hover,
+.hubspot-mailing-embed input[type="submit"].hs-button:hover,
+.hubspot-mailing-embed .hs_submit .actions input:hover,
+.hubspot-mailing-embed .hs_submit input[type="submit"]:hover,
+.hubspot-mailing-embed .hs-form input[type="submit"]:hover,
+.hubspot-mailing-embed .hs-form button[type="submit"]:hover {
+  border-color: #27272a !important;
+  color: #27272a !important;
+  background: #f4f4f5 !important;
+  background-color: #f4f4f5 !important;
+  background-image: none !important;
+}
+
+.hubspot-mailing-embed .hs-button:focus-visible,
+.hubspot-mailing-embed input.hs-button:focus-visible,
+.hubspot-mailing-embed .hs_submit input[type="submit"]:focus-visible {
+  outline: 2px solid #52525b !important;
+  outline-offset: 2px !important;
+}
+
+/* Errors / success copy */
+.hubspot-mailing-embed ul.hs-error-msgs,
+.hubspot-mailing-embed .hs-error-msgs label {
+  color: #dc2626 !important;
+  font-size: 0.875rem !important;
+}
+
+.hubspot-mailing-embed .submitted-message {
+  font-size: 0.875rem !important;
+  color: #71717a !important;
+}

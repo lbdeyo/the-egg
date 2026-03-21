@@ -4,6 +4,7 @@ import Script from "next/script";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { HubSpotTracker } from "@/components/HubSpotTracker";
 import "./globals.css";
+import "./hubspot-form-overrides.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

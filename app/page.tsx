@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Fragment } from "react";
-import { MailingListForm } from "@/components/MailingListForm";
+import { HubSpotEmbeddedMailingForm } from "@/components/HubSpotEmbeddedMailingForm";
 
 // const ABOUT_PARAS = [
 //   "THE EGG is a seductive, unsettling collision of flesh and code. An egg-laying college professor, a feather-faced hacker, and a mute street artist are drawn together when a new technology begins to dissolve the boundary between human and manufactured. What begins as innovation turns mythic and corporate, intimate and apocalyptic.",
@@ -73,13 +73,14 @@ export default function Home() {
         {/* <NavBar /> */}
 
         <p className="pointer-events-none absolute inset-x-0 top-0 z-20 px-8 pt-8 text-sm leading-snug text-zinc-500 md:px-12 md:pt-10 lg:px-20">
-          The Egg: Coming to The Rosette theater, Austin, TX, October 29 – November 21.
+          The Egg: Coming to The Rosette theater, Austin, TX, October 29 –
+          November 21.
         </p>
 
         {/* Title + subheader – shrink-wrapped block centered in viewport; text left inside the block */}
         <section className="flex min-h-screen flex-col justify-center bg-transparent px-8 py-8 md:px-12 lg:px-20">
           <div className="mx-auto w-fit max-w-[min(100%,64rem)] text-left">
-            <MailingListForm />
+            <HubSpotEmbeddedMailingForm />
           </div>
         </section>
 
