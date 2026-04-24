@@ -3,14 +3,14 @@
  * If HubSpot changes class names or uses a strict iframe embed, tweak here or in HubSpot’s form theme.
  */
 
-/* ----- Layout: line up “Join the wait list” with form (HubSpot adds padding / centers shell) ----- */
+/* ----- Layout: line up mailing list heading with form (HubSpot adds padding / centers shell) ----- */
 .hubspot-mailing-embed {
   box-sizing: border-box;
 }
 
 .hubspot-mailing-heading {
   box-sizing: border-box;
-  text-align: center !important;
+  text-align: left !important;
 }
 
 .hubspot-form-slot,
@@ -56,6 +56,12 @@
 .hubspot-mailing-embed .hs-form-field {
   padding-left: 0 !important;
   margin-left: 0 !important;
+}
+
+/* Tighten heading-to-first-field spacing (heading -> "Email"). */
+.hubspot-mailing-embed .hs-form-frame .hs-form .hs-form-field:first-of-type,
+.hubspot-mailing-embed .hs-form-frame form.hs-form .hs-form-field:first-of-type {
+  margin-top: 0 !important;
 }
 
 .hubspot-mailing-embed .hs-form-frame fieldset {
@@ -177,4 +183,71 @@
 .hubspot-mailing-embed .submitted-message {
   font-size: 0.875rem !important;
   color: #71717a !important;
+}
+
+/* ----- Dark panel (e.g. temp page): white / light type ----- */
+.hubspot-form-on-dark .hubspot-mailing-heading {
+  color: #fafafa !important;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.35));
+}
+
+.hubspot-form-on-dark .hubspot-mailing-embed .hs-form-field > label {
+  color: #fafafa !important;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.25));
+}
+
+.hubspot-form-on-dark .hubspot-mailing-embed .hs-form-required {
+  color: #e4e4e7 !important;
+}
+
+.hubspot-form-on-dark .hubspot-mailing-embed .hs-input,
+.hubspot-form-on-dark .hubspot-mailing-embed input.hs-input,
+.hubspot-form-on-dark .hubspot-mailing-embed .hs-form-field input[type="email"],
+.hubspot-form-on-dark .hubspot-mailing-embed .hs-form-field input[type="text"] {
+  color: #fafafa !important;
+  background-color: rgba(0, 0, 0, 0.35) !important;
+  border-color: rgba(244, 244, 245, 0.35) !important;
+}
+
+.hubspot-form-on-dark .hubspot-mailing-embed .hs-input::placeholder,
+.hubspot-form-on-dark .hubspot-mailing-embed input::placeholder {
+  color: #a1a1aa !important;
+}
+
+.hubspot-form-on-dark .hubspot-mailing-embed .hs-button,
+.hubspot-form-on-dark .hubspot-mailing-embed input.hs-button,
+.hubspot-form-on-dark .hubspot-mailing-embed .hs-button.primary,
+.hubspot-form-on-dark .hubspot-mailing-embed .hs-button.primary.large,
+.hubspot-form-on-dark .hubspot-mailing-embed input[type="submit"].hs-button,
+.hubspot-form-on-dark .hubspot-mailing-embed .hs_submit .actions input,
+.hubspot-form-on-dark .hubspot-mailing-embed .hs_submit .actions input[type="submit"],
+.hubspot-form-on-dark .hubspot-mailing-embed .hs_submit input[type="submit"],
+.hubspot-form-on-dark .hubspot-mailing-embed .hs-form input[type="submit"],
+.hubspot-form-on-dark .hubspot-mailing-embed .hs-form button[type="submit"] {
+  border-color: #e4e4e7 !important;
+  color: #fafafa !important;
+}
+
+.hubspot-form-on-dark .hubspot-mailing-embed .hs-button:hover,
+.hubspot-form-on-dark .hubspot-mailing-embed input.hs-button:hover,
+.hubspot-form-on-dark .hubspot-mailing-embed .hs-button.primary:hover,
+.hubspot-form-on-dark .hubspot-mailing-embed input[type="submit"].hs-button:hover,
+.hubspot-form-on-dark .hubspot-mailing-embed .hs_submit .actions input:hover,
+.hubspot-form-on-dark .hubspot-mailing-embed .hs_submit input[type="submit"]:hover,
+.hubspot-form-on-dark .hubspot-mailing-embed .hs-form input[type="submit"]:hover,
+.hubspot-form-on-dark .hubspot-mailing-embed .hs-form button[type="submit"]:hover {
+  border-color: #fafafa !important;
+  color: #fafafa !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+  background-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.hubspot-form-on-dark .hubspot-mailing-embed .hs-button:focus-visible,
+.hubspot-form-on-dark .hubspot-mailing-embed input.hs-button:focus-visible,
+.hubspot-form-on-dark .hubspot-mailing-embed .hs_submit input[type="submit"]:focus-visible {
+  outline-color: #e4e4e7 !important;
+}
+
+.hubspot-form-on-dark .hubspot-mailing-embed .submitted-message {
+  color: #d4d4d8 !important;
 }

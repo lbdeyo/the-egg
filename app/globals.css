@@ -22,3 +22,29 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Nexa — from Typekit kit (use.typekit.net/dmt4kkh.css). Enable “Nexa” in the kit if it doesn’t load. */
+.font-nexa {
+  font-family: "nexa", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-nexa-bold {
+  font-family: "nexa", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Bogart — from Typekit kit (use.typekit.net/dmt4kkh.css). Enable “Bogart” in the kit if it doesn’t load. */
+.font-bogart {
+  font-family: "bogart", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-bogart-bold {
+  font-family: "bogart", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}

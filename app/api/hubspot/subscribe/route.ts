@@ -1,22 +1,16 @@
 import { NextRequest, NextResponse } from "next/server";
-
-const PORTAL_ID = "244639378";
+import {
+  HUBSPOT_WAITLIST_FORM_GUID,
+  HUBSPOT_WAITLIST_PORTAL_ID,
+} from "@/lib/hubspot-waitlist";
 
 /**
- * HubSpot Forms API v3 — uses the same portal as js-na2.hs-scripts.com/{portalId}.js
- * Set HUBSPOT_FORM_GUID in .env to your form’s GUID (HubSpot → Marketing → Forms → form details).
+ * HubSpot Forms API v3 — same form as the site embed (`HubSpotEmbeddedMailingForm`).
+ * Set `HUBSPOT_FORM_GUID` in `.env.local` only if you need a different form than the default.
  */
 export async function POST(req: NextRequest) {
-  const formGuid = process.env.HUBSPOT_FORM_GUID;
-  if (!formGuid) {
-    return NextResponse.json(
-      {
-        error:
-          "Mailing list is not configured yet. Add HUBSPOT_FORM_GUID to your environment.",
-      },
-      { status: 503 },
-    );
-  }
+  const formGuid =
+    process.env.HUBSPOT_FORM_GUID?.trim() || HUBSPOT_WAITLIST_FORM_GUID;
 
   let body: unknown;
   try {
@@ -42,7 +36,7 @@ export async function POST(req: NextRequest) {
   const referer = req.headers.get("referer") || undefined;
 
   const hsRes = await fetch(
-    `https://api.hsforms.com/submissions/v3/integration/submit/${PORTAL_ID}/${formGuid}`,
+    `https://api.hsforms.com/submissions/v3/integration/submit/${HUBSPOT_WAITLIST_PORTAL_ID}/${formGuid}`,
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
