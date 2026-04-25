@@ -118,7 +118,7 @@ export default function TempPage() {
             <div className="p-2">
               <h2 className="font-bogart mb-3 text-2xl tracking-wide text-orange-500 md:text-3xl drop-shadow-[0_1px_0_rgba(0,0,0,0.12)]">
                 <a
-                  href="https://seedandspark.com/fund/the-egg-a-play"
+                  href="https://seedandspark.com/fund/the-egg-a-play?token=29b74830a1f32f0b1a467d5b0fd655718ca5ee87206cb558566f375daebc16e2"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-sm text-inherit no-underline transition hover:underline hover:decoration-orange-400/90 hover:underline-offset-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black/50"
@@ -127,8 +127,9 @@ export default function TempPage() {
                 </a>
               </h2>
               <p className="font-bogart mb-5 max-w-3xl text-base leading-relaxed text-zinc-100 drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)] md:text-lg">
-                THE EGG is a one-of-a-kind theatrical experience featuring freakish
-                birdpeople, illegal surgery, and out-of-control technology.
+                THE EGG is a one-of-a-kind theatrical experience featuring
+                freakish birdpeople, illegal surgery, and out-of-control
+                technology.
               </p>
               <div className="relative w-full overflow-hidden rounded-lg border border-zinc-200/20 bg-black/50 shadow-2xl">
                 <div className="relative w-full pt-[56.25%]">
