@@ -118,7 +118,7 @@ export default function TempPage() {
             <div className="p-2">
               <h2 className="font-bogart mb-3 text-2xl tracking-wide text-orange-500 md:text-3xl drop-shadow-[0_1px_0_rgba(0,0,0,0.12)]">
                 <a
-                  href="https://seedandspark.com/fund/the-egg-a-play?token=29b74830a1f32f0b1a467d5b0fd655718ca5ee87206cb558566f375daebc16e2"
+                  href="https://seedandspark.com/fund/the-egg-a-play"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-sm text-inherit no-underline transition hover:underline hover:decoration-orange-400/90 hover:underline-offset-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black/50"
@@ -144,12 +144,12 @@ export default function TempPage() {
                 </div>
               </div>
               <a
-                href="https://seedandspark.com/fund/the-egg-a-play?token=29b74830a1f32f0b1a467d5b0fd655718ca5ee87206cb558566f375daebc16e2"
-                className="font-bogart mt-4 inline-flex items-center justify-center rounded-md bg-orange-600 px-6 py-3 text-base font-normal text-zinc-100 shadow-md transition hover:bg-orange-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black/50"
+                href="https://seedandspark.com/fund/the-egg-a-play"
+                className="font-bogart mt-4 inline-flex items-center justify-center rounded-md bg-orange-600 px-6 py-3 text-xl font-bold text-zinc-100 shadow-md transition hover:bg-orange-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black/50"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Preview the Campaign
+                Contribute
               </a>
             </div>
           </section>
