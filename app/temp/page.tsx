@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
 import { NativeWaitlistSubscribeForm } from "@/components/NativeWaitlistSubscribeForm";
 
@@ -116,6 +117,12 @@ export default function TempPage() {
           </section>
           <section id="watch" className="px-8 py-2 max-w-4xl md:px-12">
             <div className="p-2">
+              <Link
+                href="/auditions"
+                className="font-bogart mb-4 inline-block text-xl tracking-wide text-orange-500 underline decoration-orange-500/70 underline-offset-4 transition hover:text-orange-400 hover:decoration-orange-400/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black/50 md:text-2xl drop-shadow-[0_1px_0_rgba(0,0,0,0.12)]"
+              >
+                Audition for THE EGG.
+              </Link>
               <h2 className="font-bogart mb-3 text-2xl tracking-wide text-orange-500 md:text-3xl drop-shadow-[0_1px_0_rgba(0,0,0,0.12)]">
                 <a
                   href="https://seedandspark.com/fund/the-egg-a-play"
