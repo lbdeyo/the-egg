@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
 import { NativeWaitlistSubscribeForm } from "@/components/NativeWaitlistSubscribeForm";
 
@@ -99,6 +98,13 @@ export default function TempPage() {
         <h1 className="font-bogart px-8 pt-8 text-4xl tracking-tight text-zinc-100 drop-shadow-[0_2px_8px_rgba(0,0,0,0.65)] md:px-12 md:pt-10 md:text-5xl lg:text-8xl">
           THE EGG
         </h1>
+        <p className="font-bogart mb-3 px-8 max-w-3xl text-xl leading-relaxed text-zinc-100 drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)] md:px-12 md:text-2xl">
+          Running October 29 - November 21, 2026 at Austin&apos;s The Rosette
+        </p>
+        <p className="font-bogart px-8 max-w-3xl text-base leading-relaxed text-zinc-100 drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)] md:px-12 md:text-lg">
+          THE EGG is a one-of-a-kind theatrical experience featuring freakish
+          birdpeople, illegal surgery, and out-of-control technology.
+        </p>
         <div className="font-bogart text-zinc-100">
           {/* About the Play */}
           <section id="about" className="px-8 py-4 max-w-2xl md:px-12 hidden">
@@ -113,51 +119,6 @@ export default function TempPage() {
                   </p>
                 ))}
               </div>
-            </div>
-          </section>
-          <section id="watch" className="px-8 py-2 max-w-4xl md:px-12">
-            <div className="p-2">
-              <Link
-                href="/auditions"
-                className="font-bogart mb-4 inline-block text-xl tracking-wide text-orange-500 underline decoration-orange-500/70 underline-offset-4 transition hover:text-orange-400 hover:decoration-orange-400/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black/50 md:text-2xl drop-shadow-[0_1px_0_rgba(0,0,0,0.12)]"
-              >
-                Audition for THE EGG.
-              </Link>
-              <h2 className="font-bogart mb-3 text-2xl tracking-wide text-orange-500 md:text-3xl drop-shadow-[0_1px_0_rgba(0,0,0,0.12)]">
-                <a
-                  href="https://seedandspark.com/fund/the-egg-a-play"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-sm text-inherit no-underline transition hover:underline hover:decoration-orange-400/90 hover:underline-offset-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black/50"
-                >
-                  Support THE EGG on Seed & Spark
-                </a>
-              </h2>
-              <p className="font-bogart mb-5 max-w-3xl text-base leading-relaxed text-zinc-100 drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)] md:text-lg">
-                THE EGG is a one-of-a-kind theatrical experience featuring
-                freakish birdpeople, illegal surgery, and out-of-control
-                technology.
-              </p>
-              <div className="relative w-full overflow-hidden rounded-lg border border-zinc-200/20 bg-black/50 shadow-2xl">
-                <div className="relative w-full pt-[56.25%]">
-                  <iframe
-                    className="absolute inset-0 h-full w-full"
-                    src="https://www.youtube.com/embed/e5HnMOaWHGc"
-                    title="The Egg video"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                  />
-                </div>
-              </div>
-              <a
-                href="https://seedandspark.com/fund/the-egg-a-play"
-                className="font-bogart mt-4 inline-flex items-center justify-center rounded-md bg-orange-600 px-6 py-3 text-xl font-bold text-zinc-100 shadow-md transition hover:bg-orange-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black/50"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Contribute
-              </a>
             </div>
           </section>
           <section id="signup" className="px-8 py-4 max-w-4xl md:px-12">
