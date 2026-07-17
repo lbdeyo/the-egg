@@ -95,16 +95,55 @@ export default function TempPage() {
         {/* <NavBar /> */}
 
         {/* Title + subheader – shrink-wrapped block centered in viewport; text left inside the block */}
-        <h1 className="font-bogart px-8 pt-8 text-4xl tracking-tight text-zinc-100 drop-shadow-[0_2px_8px_rgba(0,0,0,0.65)] md:px-12 md:pt-10 md:text-5xl lg:text-8xl">
+        <p className="font-bogart px-8 pt-8 text-xl leading-relaxed text-zinc-100 drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)] md:px-12 md:pt-10 md:text-2xl">
+          The Zahir Presents:
+        </p>
+        <h1 className="font-bogart px-8 text-4xl tracking-tight text-zinc-100 drop-shadow-[0_2px_8px_rgba(0,0,0,0.65)] md:px-12 md:text-5xl lg:text-8xl">
           THE EGG
         </h1>
-        <p className="font-bogart mb-3 px-8 max-w-3xl text-xl leading-relaxed text-zinc-100 drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)] md:px-12 md:text-2xl">
-          Running October 29 - November 21, 2026 at Austin&apos;s The Rosette
-        </p>
-        <p className="font-bogart px-8 max-w-3xl text-base leading-relaxed text-zinc-100 drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)] md:px-12 md:text-lg">
-          THE EGG is a one-of-a-kind theatrical experience featuring freakish
-          birdpeople, illegal surgery, and out-of-control technology.
-        </p>
+        <div className="font-bogart space-y-5 px-8 max-w-3xl text-zinc-100 md:px-12">
+          <div className="space-y-1 text-xl leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)] md:text-2xl">
+            <p>By Noah Masterson</p>
+            <p>Directed by David Ritch</p>
+            <p>
+              Running October 29 - November 21, 2026 at Austin&apos;s The Rosette
+            </p>
+          </div>
+          <p className="text-2xl tracking-wide text-orange-500 drop-shadow-[0_1px_0_rgba(0,0,0,0.12)] md:text-3xl">
+            Get Tickets
+          </p>
+          <div className="space-y-5 text-base leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)] md:text-lg">
+            <p>
+              Enter the world of THE EGG: A place immiserated and delighted by
+              dark magic and even darker technology. A place where three social
+              misfits, each carrying bizarre, intimate secrets, must navigate
+              love and friendship under a rigid surveillance state.
+            </p>
+            <p>
+              THE EGG is about art in an age of algorithms, connection in a
+              culture of isolation, and the sirens&apos; call of digital
+              immortality.
+            </p>
+            <p>
+              THE EGG is a one-of-a-kind theatrical experience featuring
+              freakish birdpeople, illegal surgery, and out-of-control
+              technology.
+            </p>
+            <p>Enter at your own risk.</p>
+            <div className="relative w-full overflow-hidden rounded-lg border border-zinc-200/20 bg-black/50 shadow-2xl">
+              <div className="relative w-full pt-[56.25%]">
+                <iframe
+                  className="absolute inset-0 h-full w-full"
+                  src="https://www.youtube.com/embed/CfJsYj6Uz1k?si=d_8WadqF03ZDBkOJ"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="font-bogart text-zinc-100">
           {/* About the Play */}
           <section id="about" className="px-8 py-4 max-w-2xl md:px-12 hidden">
