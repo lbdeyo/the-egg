@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Fragment, useEffect, useState } from "react";
 import { NativeWaitlistSubscribeForm } from "@/components/NativeWaitlistSubscribeForm";
+import { SiteNav } from "@/components/SiteNav";
 
 // const ABOUT_PARAS = [
 //   "THE EGG is a seductive, unsettling collision of flesh and code. An egg-laying college professor, a feather-faced hacker, and a mute street artist are drawn together when a new technology begins to dissolve the boundary between human and manufactured. What begins as innovation turns mythic and corporate, intimate and apocalyptic.",
@@ -92,10 +93,10 @@ export default function TempPage() {
         aria-hidden
       />
       <div className="relative z-10 flex min-h-screen flex-col">
-        {/* <NavBar /> */}
+        <SiteNav />
 
         {/* Title + subheader – shrink-wrapped block centered in viewport; text left inside the block */}
-        <p className="font-bogart px-8 pt-8 text-xl leading-relaxed text-zinc-100 drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)] md:px-12 md:pt-10 md:text-2xl">
+        <p className="font-bogart px-8 text-xl leading-relaxed text-zinc-100 drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)] md:px-12 md:text-2xl">
           The Zahir Presents:
         </p>
         <h1 className="font-bogart px-8 text-4xl tracking-tight text-zinc-100 drop-shadow-[0_2px_8px_rgba(0,0,0,0.65)] md:px-12 md:text-5xl lg:text-8xl">
