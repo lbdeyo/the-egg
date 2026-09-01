@@ -4,10 +4,11 @@ import Script from "next/script";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+const GA_ID =
+  process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-KSN04D6NZC";
 
 /**
- * Optional GA4 — set NEXT_PUBLIC_GA_MEASUREMENT_ID (e.g. G-BL44TBHWS7) to enable.
+ * GA4 via gtag.js — defaults to G-KSN04D6NZC; override with NEXT_PUBLIC_GA_MEASUREMENT_ID.
  * Sends page views on route changes (App Router).
  */
 export function GoogleAnalytics() {
