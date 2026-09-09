@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+import { GoogleAnalyticsPageView } from "@/components/GoogleAnalyticsPageView";
 import { HubSpotTracker } from "@/components/HubSpotTracker";
 import "./globals.css";
 import "./hubspot-form-overrides.css";
@@ -29,6 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <GoogleAnalytics />
         <link rel="stylesheet" href="https://use.typekit.net/dmt4kkh.css" />
       </head>
       <body
@@ -40,7 +42,7 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
         <HubSpotTracker />
-        <GoogleAnalytics />
+        <GoogleAnalyticsPageView />
         {children}
       </body>
     </html>
