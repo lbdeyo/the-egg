@@ -31,7 +31,7 @@ const CAST: CastMember[] = [
   {
     character: "Raymond",
     actor: "Justin Smith",
-    photo: "/img/cast-photos/Justin Smith.jpeg",
+    photo: "/img/cast-photos/justin-smith.jpg",
     bio: "Justin G. Smith is an actor and musician originally from Memphis, Tennessee and a company member with The Zahir. A longtime performer within Austin's creative community, he has spent over a decade appearing on regional stages and recordings and has toured nationally and internationally as a musician. Recent theatre credits include productions with Dirty Gold, Ground Floor Theatre, Jarrott Productions, Austin Shakespeare and more. Justin is most drawn to grounded, character-driven stories.",
   },
   {
@@ -63,7 +63,7 @@ const CAST: CastMember[] = [
   {
     character: "Soraya",
     actor: "Laura D'Eramo",
-    photo: "/img/cast-photos/Laura D_Eramo.jpg",
+    photo: "/img/cast-photos/laura-headshot.jpg",
     bio: "Laura D’Eramo is a St. Edward’s University graduate. She trained at Atlantic Acting School in NYC. She spent two years in Japan teaching English and performed with Tokyo International Players. Since returning to Austin in 2024, credits include Austin Shakespeare, The Vortex, The Stage Austin, and Walking Shadow Shakespeare. Most recently, she appeared in The Zahir’s Oversight.",
   },
   {
