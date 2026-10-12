@@ -12,7 +12,7 @@ export function SiteNav() {
   const pathname = usePathname();
 
   return (
-    {/* Bogart glyphs paint outside their line box and cover these links. */}
+    // Bogart glyphs paint outside their line box and cover these links.
     <nav
       aria-label="Main"
       className="font-bogart relative z-20 flex items-center gap-4 px-8 pt-6 text-sm uppercase tracking-wide md:px-12 md:pt-8 md:text-base"
