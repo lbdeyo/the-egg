@@ -111,7 +111,7 @@ export default function TempPage() {
             </p>
           </div>
           <a
-            href="https://tickets.atxtheatre.org/events/the-egg"
+            href="https://tickets.atxtheatre.org/organizations/the-zahir"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-2xl tracking-wide text-orange-500 underline decoration-orange-500/70 underline-offset-4 transition hover:text-orange-400 hover:decoration-orange-400/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black/50 md:text-3xl drop-shadow-[0_1px_0_rgba(0,0,0,0.12)]"
