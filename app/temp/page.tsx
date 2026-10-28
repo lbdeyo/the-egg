@@ -95,6 +95,28 @@ export default function TempPage() {
       <div className="relative z-10 flex min-h-screen flex-col">
         <SiteNav />
 
+        {/* Temporary cancellation notice — remove after opening weekend */}
+        <div
+          role="alert"
+          className="mx-8 mt-8 mb-2 max-w-4xl rounded-xl border-4 border-amber-400 bg-amber-50 px-6 py-7 text-zinc-950 shadow-[0_12px_40px_rgba(0,0,0,0.45)] md:mx-12 md:px-10 md:py-9"
+        >
+          <blockquote className="font-bogart text-2xl italic leading-snug md:text-4xl">
+            <p>
+              &ldquo;The best-laid schemes of mice and men
+              <br />
+              Often go awry.&rdquo;
+            </p>
+          </blockquote>
+          <p className="font-bogart mt-5 text-xl leading-relaxed md:text-2xl">
+            We&apos;re canceling our 10/29/2026 performance of THE EGG and will
+            open Friday, 10/30/2026. Ticket payments for the 29th have been
+            refunded and all those affected are urged to get tickets for later
+            shows. We have plenty of seats available this weekend and in all
+            subsequent weekends. Thank you very much for your kind
+            understanding.
+          </p>
+        </div>
+
         {/* Title + subheader – shrink-wrapped block centered in viewport; text left inside the block */}
         <p className="font-bogart px-8 text-xl leading-relaxed text-zinc-100 drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)] md:px-12 md:text-2xl">
           The Zahir Presents:
